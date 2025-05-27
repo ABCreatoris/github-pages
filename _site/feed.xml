@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-28T04:08:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello, ABCreatoris</title><subtitle>Startup for ABCreatoris Github page</subtitle><author><name>ChenXY</name></author><entry><title type="html">代码示例与最佳实践</title><link href="http://localhost:4000/2025/04/18/CodeExample.html" rel="alternate" type="text/html" title="代码示例与最佳实践" /><published>2025-04-18T00:00:00+08:00</published><updated>2025-04-18T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/18/CodeExample</id><content type="html" xml:base="http://localhost:4000/2025/04/18/CodeExample.html"><![CDATA[<p>在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。</p>
+
+<h2 id="javascript-示例">JavaScript 示例</h2>
+
+<p>以下是一个简单的 JavaScript 函数示例：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">calculateTotal</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">items</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">total</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">price</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="nx">item</span><span class="p">.</span><span class="nx">discount</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">total</span> <span class="o">+</span> <span class="nx">price</span><span class="p">;</span>
+  <span class="p">},</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 使用示例</span>
+<span class="kd">const</span> <span class="nx">items</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="na">price</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="na">discount</span><span class="p">:</span> <span class="mf">0.1</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="na">price</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="na">discount</span><span class="p">:</span> <span class="mf">0.2</span> <span class="p">}</span>
+<span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">calculateTotal</span><span class="p">(</span><span class="nx">items</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Total: $</span><span class="p">${</span><span class="nx">total</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="python-示例">Python 示例</h2>
+
+<p>这是一个 Python 的类定义示例：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">posts</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">create_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+        <span class="n">post</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">'title'</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+            <span class="s">'content'</span><span class="p">:</span> <span class="n">content</span><span class="p">,</span>
+            <span class="s">'created_at'</span><span class="p">:</span> <span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">posts</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">post</span>
+
+    <span class="k">def</span> <span class="nf">get_posts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">posts</span><span class="p">,</span> 
+                     <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s">'created_at'</span><span class="p">],</span> 
+                     <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="html-和-css-示例">HTML 和 CSS 示例</h2>
+
+<p>下面是一个响应式导航栏的示例：</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">alt=</span><span class="s">"Logo"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-links"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>首页<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/about"</span><span class="nt">&gt;</span>关于<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/contact"</span><span class="nt">&gt;</span>联系<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<p>对应的 CSS 样式：</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.nav-links</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="py">gap</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.nav-links</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="shell-命令示例">Shell 命令示例</h2>
+
+<p>以下是一些常用的 Git 命令：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 初始化仓库</span>
+git init
+
+<span class="c"># 添加远程仓库</span>
+git remote add origin https://github.com/username/repo.git
+
+<span class="c"># 创建并切换到新分支</span>
+git checkout <span class="nt">-b</span> feature/new-feature
+
+<span class="c"># 提交更改</span>
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Add new feature"</span>
+
+<span class="c"># 推送到远程仓库</span>
+git push origin feature/new-feature
+</code></pre></div></div>
+
+<h2 id="行内代码示例">行内代码示例</h2>
+
+<p>在 Markdown 中，我们可以使用 <code class="language-plaintext highlighter-rouge">行内代码</code> 来突出显示特定的代码片段。例如，<code class="language-plaintext highlighter-rouge">console.log()</code> 是一个常用的 JavaScript 函数。</p>
+
+<h2 id="代码块中的注释">代码块中的注释</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 这是一个单行注释</span>
+
+<span class="cm">/* 
+ * 这是一个多行注释
+ * 可以包含多行内容
+ */</span>
+
+<span class="cm">/**
+ * 这是一个文档注释
+ * @param {string} name - 用户名
+ * @returns {string} 问候语
+ */</span>
+<span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">!`</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="总结">总结</h2>
+
+<p>通过以上示例，我们可以看到不同编程语言的语法特点和最佳实践。在实际开发中，我们应该：</p>
+
+<ol>
+  <li>保持代码整洁和可读性</li>
+  <li>添加适当的注释</li>
+  <li>遵循语言特定的编码规范</li>
+  <li>使用版本控制管理代码</li>
+</ol>
+
+<p>希望这些示例对您有所帮助！</p>]]></content><author><name>ChenXY</name></author><category term="代码" /><category term="示例" /><category term="技术" /><summary type="html"><![CDATA[在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" /><media:content medium="image" url="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">高效项目实践与技术成长</title><link href="http://localhost:4000/2025/04/17/SixthPost.html" rel="alternate" type="text/html" title="高效项目实践与技术成长" /><published>2025-04-17T00:00:00+08:00</published><updated>2025-04-17T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/17/SixthPost</id><content type="html" xml:base="http://localhost:4000/2025/04/17/SixthPost.html"><![CDATA[<p>这是我的第六篇博客文章。今天我想分享一些关于 DevOps 的心得。</p>
+
+<h2 id="devops-心得">DevOps 心得</h2>
+
+<p>DevOps 是开发、测试和运维的结合，目标是提高软件交付效率。使用 CI/CD 工具（如 Jenkins、GitLab CI）和容器技术（如 Docker、Kubernetes），可以大大简化部署流程。</p>
+
+<h2 id="未来计划">未来计划</h2>
+
+<p>希望未来能深入学习更多 DevOps 技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="项目管理" /><category term="技术成长" /><category term="实践" /><summary type="html"><![CDATA[这是我的第六篇博客文章。今天我想分享一些关于 DevOps 的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-17-SixthPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-17-SixthPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">云服务时代的开发体验</title><link href="http://localhost:4000/2025/04/16/FifthPost.html" rel="alternate" type="text/html" title="云服务时代的开发体验" /><published>2025-04-16T00:00:00+08:00</published><updated>2025-04-16T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/16/FifthPost</id><content type="html" xml:base="http://localhost:4000/2025/04/16/FifthPost.html"><![CDATA[<p>这是我的第五篇博客文章。今天我想分享一些关于云服务的心得。</p>
+
+<h2 id="云服务心得">云服务心得</h2>
+
+<p>云服务（如 AWS、Azure、Google Cloud）让开发和部署变得更加灵活。无论是服务器、存储还是 AI 服务，云平台都能提供强大的支持。</p>
+
+<h2 id="未来计划">未来计划</h2>
+
+<p>希望未来能深入学习更多云服务技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="云服务" /><category term="开发" /><category term="技术" /><summary type="html"><![CDATA[这是我的第五篇博客文章。今天我想分享一些关于云服务的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-16-FifthPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-16-FifthPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">数据库技术与系统性能</title><link href="http://localhost:4000/2025/04/15/FourthPost.html" rel="alternate" type="text/html" title="数据库技术与系统性能" /><published>2025-04-15T00:00:00+08:00</published><updated>2025-04-15T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/15/FourthPost</id><content type="html" xml:base="http://localhost:4000/2025/04/15/FourthPost.html"><![CDATA[<p>这是我的第四篇博客文章。今天我想分享一些关于数据库的心得。</p>
+
+<h2 id="数据库心得">数据库心得</h2>
+
+<p>数据库是后端系统的核心。无论是关系型数据库（如 MySQL、PostgreSQL）还是 NoSQL 数据库（如 MongoDB、Redis），选择合适的数据库对系统性能至关重要。</p>
+
+<h2 id="未来计划">未来计划</h2>
+
+<p>希望未来能深入学习更多数据库技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="数据库" /><category term="性能优化" /><category term="技术" /><summary type="html"><![CDATA[这是我的第四篇博客文章。今天我想分享一些关于数据库的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-15-FourthPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-15-FourthPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">后端开发的核心与实践</title><link href="http://localhost:4000/2025/04/14/ThirdPost.html" rel="alternate" type="text/html" title="后端开发的核心与实践" /><published>2025-04-14T00:00:00+08:00</published><updated>2025-04-14T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/14/ThirdPost</id><content type="html" xml:base="http://localhost:4000/2025/04/14/ThirdPost.html"><![CDATA[<p>这是我的第三篇博客文章。今天我想分享一些关于后端开发的心得。</p>
+
+<h2 id="后端开发心得">后端开发心得</h2>
+
+<p>后端开发是构建稳定、高效系统的关键。使用 Node.js、Python 或 Java 等语言，可以快速搭建强大的后端服务。</p>
+
+<h2 id="未来计划">未来计划</h2>
+
+<p>希望未来能深入学习更多后端技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="后端" /><category term="开发" /><category term="技术" /><summary type="html"><![CDATA[这是我的第三篇博客文章。今天我想分享一些关于后端开发的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-14-ThirdPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-14-ThirdPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">前端开发的乐趣与挑战</title><link href="http://localhost:4000/2025/04/13/SecondPost.html" rel="alternate" type="text/html" title="前端开发的乐趣与挑战" /><published>2025-04-13T00:00:00+08:00</published><updated>2025-04-13T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/13/SecondPost</id><content type="html" xml:base="http://localhost:4000/2025/04/13/SecondPost.html"><![CDATA[<p>这是我的第二篇博客文章。今天我想分享一些关于前端开发的心得。</p>
+
+<h2 id="前端开发心得">前端开发心得</h2>
+
+<p>前端开发是一个充满挑战和乐趣的领域。HTML、CSS 和 JavaScript 是基础，但现代前端框架（如 React、Vue）让开发更加高效。</p>
+
+<h2 id="未来计划">未来计划</h2>
+
+<p>希望未来能深入学习更多前端技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="前端" /><category term="开发" /><category term="技术" /><summary type="html"><![CDATA[这是我的第二篇博客文章。今天我想分享一些关于前端开发的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-13-SecondPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-13-SecondPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jekyll与我的博客之路</title><link href="http://localhost:4000/2025/04/12/HelloWorld.html" rel="alternate" type="text/html" title="Jekyll与我的博客之路" /><published>2025-04-12T00:00:00+08:00</published><updated>2025-04-12T00:00:00+08:00</updated><id>http://localhost:4000/2025/04/12/HelloWorld</id><content type="html" xml:base="http://localhost:4000/2025/04/12/HelloWorld.html"><![CDATA[<p>这是我的第一篇博客文章。在这里，我将分享我的学习心得和生活感悟。</p>
+
+<h2 id="学习心得">学习心得</h2>
+
+<p>最近在学习 Jekyll 和 GitHub Pages，发现它们非常适合用来搭建个人博客。Jekyll 的简洁和 GitHub Pages 的免费托管，让我能够快速上线自己的网站。</p>
+
+<p><img src="/assets/images/jekyll-logo.png" alt="Jekyll Logo" /></p>
+
+<h2 id="生活感悟">生活感悟</h2>
+
+<p>生活就像编程，需要不断调试和优化。希望在这里记录下我的每一步成长。</p>
+
+<p><img src="/assets/images/life.jpg" alt="Life" /></p>]]></content><author><name>ChenXY</name></author><category term="Jekyll" /><category term="博客" /><category term="教程" /><summary type="html"><![CDATA[这是我的第一篇博客文章。在这里，我将分享我的学习心得和生活感悟。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-12-HelloWorld.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-12-HelloWorld.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">高效项目实践与技术成长</title><link href="http://localhost:4000/2024/03/21/my-first-project.html" rel="alternate" type="text/html" title="高效项目实践与技术成长" /><published>2024-03-21T00:00:00+08:00</published><updated>2024-03-21T00:00:00+08:00</updated><id>http://localhost:4000/2024/03/21/my-first-project</id><content type="html" xml:base="http://localhost:4000/2024/03/21/my-first-project.html"><![CDATA[<p>这是我的第一个项目展示文章。在这篇文章中，我使用了多个标签来更好地组织内容。重新开局最喜欢v看着许可证喜欢v空间秩序空间站v科技合作想看v促进小城镇空间和v看着旧恨新仇v在科学决策v好快好快结束的饭卡还是地方看见啊还是地方看见哈萨克复活卡上方空间啊是否打卡金黄色的饭卡还是看大家发哈开始计划的饭卡接受对方空间啊回复</p>
+
+<h2 id="项目介绍">项目介绍</h2>
+
+<p>这是一个示例项目，用于展示如何正确使用标签系统。</p>
+
+<h3 id="标签使用说明">标签使用说明</h3>
+
+<ol>
+  <li>技术标签：用于标记技术相关的文章</li>
+  <li>项目标签：用于标记项目展示类文章</li>
+  <li>教程标签：用于标记教程类文章</li>
+</ol>
+
+<p>您可以根据文章的内容，选择合适的标签组合。例如：</p>
+<ul>
+  <li>技术文章：使用 [技术] 标签</li>
+  <li>项目展示：使用 [技术, 项目] 标签</li>
+  <li>教程文章：使用 [技术, 教程] 标签</li>
+  <li>生活随笔：使用 [生活] 标签</li>
+</ul>
+
+<p>记住，标签的选择应该：</p>
+<ul>
+  <li>准确反映文章内容</li>
+  <li>便于读者查找</li>
+  <li>保持一致性</li>
+  <li>避免过度使用</li>
+</ul>]]></content><author><name>ChenXY</name></author><category term="项目" /><category term="实践" /><category term="技术" /><summary type="html"><![CDATA[这是我的第一个项目展示文章。在这篇文章中，我使用了多个标签来更好地组织内容。重新开局最喜欢v看着许可证喜欢v空间秩序空间站v科技合作想看v促进小城镇空间和v看着旧恨新仇v在科学决策v好快好快结束的饭卡还是地方看见啊还是地方看见哈萨克复活卡上方空间啊是否打卡金黄色的饭卡还是看大家发哈开始计划的饭卡接受对方空间啊回复]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2024-03-21-my-first-project.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2024-03-21-my-first-project.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/2024/03/20/hello-world.html" rel="alternate" type="text/html" title="Hello, World!" /><published>2024-03-20T00:00:00+08:00</published><updated>2024-03-20T00:00:00+08:00</updated><id>http://localhost:4000/2024/03/20/hello-world</id><content type="html" xml:base="http://localhost:4000/2024/03/20/hello-world.html"><![CDATA[<p>这是我的第一篇博客文章。在这里，我使用了 <code class="language-plaintext highlighter-rouge">tags</code> 属性来添加标签。您可以在文章的前置元数据中添加多个标签，它们会自动显示在标签页面中。</p>
+
+<h2 id="如何添加标签">如何添加标签</h2>
+
+<p>在每篇文章的顶部，您需要添加前置元数据（front matter），格式如下：</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">文章标题"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">标签1</span><span class="pi">,</span> <span class="nv">标签2</span><span class="pi">,</span> <span class="nv">标签3</span><span class="pi">]</span>
+<span class="na">image</span><span class="pi">:</span> <span class="s">/图片路径.jpg</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<h3 id="标签使用建议">标签使用建议</h3>
+
+<ol>
+  <li>使用简洁的标签名称</li>
+  <li>保持标签的一致性</li>
+  <li>避免使用过于具体的标签</li>
+  <li>建议使用中文标签，便于中文用户理解</li>
+</ol>
+
+<h3 id="常用标签示例">常用标签示例</h3>
+
+<ul>
+  <li>技术：用于技术相关的文章</li>
+  <li>学习：用于学习笔记和心得</li>
+  <li>生活：用于生活随笔</li>
+  <li>项目：用于项目展示</li>
+  <li>教程：用于教程类文章</li>
+</ul>
+
+<p>您可以根据自己的需求添加或修改标签。标签会自动在标签页面中显示，并统计每篇文章的数量。</p>]]></content><author><name>ChenXY</name></author><category term="入门" /><category term="教程" /><category term="技术" /><summary type="html"><![CDATA[这是我的第一篇博客文章。在这里，我使用了 tags 属性来添加标签。您可以在文章的前置元数据中添加多个标签，它们会自动显示在标签页面中。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2024-03-20-hello-world.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2024-03-20-hello-world.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

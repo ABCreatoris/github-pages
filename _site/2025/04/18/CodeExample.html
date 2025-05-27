@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代码示例与最佳实践</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="menu-overlay"></div>
+  
+  <header class="site-header">
+    <nav class="site-nav">
+      <div class="nav-left">
+        <img src="/avatar.jpg" alt="头像" class="avatar">
+        <h1>ABCreatoris</h1>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="nav-right">
+        <a href="/">首页</a>
+        <a href="/tags">标签</a>
+        <a href="/archive">归档</a>
+        <a href="/about">关于</a>
+        <a href="https://abcreatoris.com" class="home-button" target="_blank" rel="noopener noreferrer">
+          回主页
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h18M12 3l9 9-9 9"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post">
+  <header class="post-header">
+    <h2 class="post-title">代码示例与最佳实践</h2>
+    <div class="post-meta">
+      <time datetime="2025-04-18T00:00:00+08:00">2025-04-18</time>
+      <div class="post-stats">
+        <span class="word-count">590 字</span>
+        <span class="reading-time">2 分钟</span>
+      </div>
+    </div>
+    
+    <div class="post-tags">
+      
+        <a class="post-tag" href="/tags.html#%E4%BB%A3%E7%A0%81">代码</a>
+      
+        <a class="post-tag" href="/tags.html#%E7%A4%BA%E4%BE%8B">示例</a>
+      
+        <a class="post-tag" href="/tags.html#%E6%8A%80%E6%9C%AF">技术</a>
+      
+    </div>
+    
+    
+      <div class="post-image">
+        <img src="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" alt="代码示例与最佳实践">
+      </div>
+    
+  </header>
+
+  <div class="post-content">
+    <p>在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。</p>
+
+<h2 id="javascript-示例">JavaScript 示例</h2>
+
+<p>以下是一个简单的 JavaScript 函数示例：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">calculateTotal</span><span class="p">(</span><span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">items</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">total</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">price</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="nx">item</span><span class="p">.</span><span class="nx">discount</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">total</span> <span class="o">+</span> <span class="nx">price</span><span class="p">;</span>
+  <span class="p">},</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 使用示例</span>
+<span class="kd">const</span> <span class="nx">items</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="na">price</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="na">discount</span><span class="p">:</span> <span class="mf">0.1</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="na">price</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span> <span class="na">discount</span><span class="p">:</span> <span class="mf">0.2</span> <span class="p">}</span>
+<span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">total</span> <span class="o">=</span> <span class="nx">calculateTotal</span><span class="p">(</span><span class="nx">items</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Total: $</span><span class="p">${</span><span class="nx">total</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="python-示例">Python 示例</h2>
+
+<p>这是一个 Python 的类定义示例：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">posts</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">create_post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+        <span class="n">post</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">'title'</span><span class="p">:</span> <span class="n">title</span><span class="p">,</span>
+            <span class="s">'content'</span><span class="p">:</span> <span class="n">content</span><span class="p">,</span>
+            <span class="s">'created_at'</span><span class="p">:</span> <span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">posts</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">post</span>
+
+    <span class="k">def</span> <span class="nf">get_posts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">posts</span><span class="p">,</span> 
+                     <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s">'created_at'</span><span class="p">],</span> 
+                     <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="html-和-css-示例">HTML 和 CSS 示例</h2>
+
+<p>下面是一个响应式导航栏的示例：</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">alt=</span><span class="s">"Logo"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-links"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>首页<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/about"</span><span class="nt">&gt;</span>关于<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/contact"</span><span class="nt">&gt;</span>联系<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<p>对应的 CSS 样式：</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="n">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">4px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.nav-links</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="py">gap</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.nav-links</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="shell-命令示例">Shell 命令示例</h2>
+
+<p>以下是一些常用的 Git 命令：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 初始化仓库</span>
+git init
+
+<span class="c"># 添加远程仓库</span>
+git remote add origin https://github.com/username/repo.git
+
+<span class="c"># 创建并切换到新分支</span>
+git checkout <span class="nt">-b</span> feature/new-feature
+
+<span class="c"># 提交更改</span>
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Add new feature"</span>
+
+<span class="c"># 推送到远程仓库</span>
+git push origin feature/new-feature
+</code></pre></div></div>
+
+<h2 id="行内代码示例">行内代码示例</h2>
+
+<p>在 Markdown 中，我们可以使用 <code class="language-plaintext highlighter-rouge">行内代码</code> 来突出显示特定的代码片段。例如，<code class="language-plaintext highlighter-rouge">console.log()</code> 是一个常用的 JavaScript 函数。</p>
+
+<h2 id="代码块中的注释">代码块中的注释</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 这是一个单行注释</span>
+
+<span class="cm">/* 
+ * 这是一个多行注释
+ * 可以包含多行内容
+ */</span>
+
+<span class="cm">/**
+ * 这是一个文档注释
+ * @param {string} name - 用户名
+ * @returns {string} 问候语
+ */</span>
+<span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">!`</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="总结">总结</h2>
+
+<p>通过以上示例，我们可以看到不同编程语言的语法特点和最佳实践。在实际开发中，我们应该：</p>
+
+<ol>
+  <li>保持代码整洁和可读性</li>
+  <li>添加适当的注释</li>
+  <li>遵循语言特定的编码规范</li>
+  <li>使用版本控制管理代码</li>
+</ol>
+
+<p>希望这些示例对您有所帮助！</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <nav class="post-navigation">
+      
+        <a href="/2025/04/17/SixthPost.html" class="prev-post">
+          <span class="nav-label">上一篇</span>
+          <span class="nav-title">高效项目实践与技术成长</span>
+        </a>
+      
+      
+    </nav>
+  </footer>
+</article>
+<script src="/assets/js/post-mac-code.js"></script> 
+  </main>
+
+  <button class="back-to-top" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <footer class="site-footer">
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
+    <p>&copy; 2025 ABCreatoris. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/image-loader.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/menu.js"></script>
+</body>
+</html> 

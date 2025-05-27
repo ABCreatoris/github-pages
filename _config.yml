@@ -2,3 +2,15 @@ theme: minima
 title: Hello, ABCreatoris
 author: ChenXY
 description: Startup for ABCreatoris Github page
+
+# 添加自定义样式
+sass:
+  style: compressed
+
+# 指定自定义 CSS
+include:
+  - assets/css/style.css
+
+# 确保 Jekyll 处理 CSS 文件
+plugins:
+  - jekyll-sass-converter
