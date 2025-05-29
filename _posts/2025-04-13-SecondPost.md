@@ -3,6 +3,7 @@ layout: post
 title: 前端开发的乐趣与挑战
 date: 2025-04-13
 image: /assets/images/2025-04-13-SecondPost.jpg
+categories: [技术]
 tags: [前端, 开发, 技术]
 ---
 

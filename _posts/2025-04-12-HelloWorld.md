@@ -3,6 +3,7 @@ layout: post
 title: Jekyll与我的博客之路
 date: 2025-04-12
 image: /assets/images/2025-04-12-HelloWorld.jpg
+categories: [教程]
 tags: [Jekyll, 博客, 教程]
 ---
 

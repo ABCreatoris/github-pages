@@ -3,6 +3,7 @@ layout: post
 title: 数据库技术与系统性能
 date: 2025-04-15
 image: /assets/images/2025-04-15-FourthPost.jpg
+categories: [技术]
 tags: [数据库, 性能优化, 技术]
 ---
 

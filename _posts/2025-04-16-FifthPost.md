@@ -3,6 +3,7 @@ layout: post
 title: 云服务时代的开发体验
 date: 2025-04-16
 image: /assets/images/2025-04-16-FifthPost.jpg
+categories: [技术]
 tags: [云服务, 开发, 技术]
 ---
 

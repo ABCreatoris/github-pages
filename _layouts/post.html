@@ -14,7 +14,7 @@ layout: default
     {% if page.tags %}
     <div class="post-tags">
       {% for tag in page.tags %}
-        <a class="post-tag" href="/tags.html#{{ tag | uri_escape }}">{{ tag }}</a>
+        <a class="post-tag" href="/tags#{{ tag | uri_escape }}">{{ tag }}</a>
       {% endfor %}
     </div>
     {% endif %}
@@ -46,4 +46,5 @@ layout: default
     </nav>
   </footer>
 </article>
-<script src="/assets/js/post-mac-code.js"></script> 
+<script src="/assets/js/post-mac-code.js"></script>
+<script src="/assets/js/wordcount.js"></script> 

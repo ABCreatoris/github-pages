@@ -2,6 +2,7 @@
 date: 2024-03-21
 image: /assets/images/2024-03-21-my-first-project.jpg
 layout: post
+categories: [项目]
 tags: [项目, 实践, 技术]
 title: 高效项目实践与技术成长
 ---

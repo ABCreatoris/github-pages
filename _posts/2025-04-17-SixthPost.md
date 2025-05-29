@@ -3,6 +3,7 @@ layout: post
 title: 高效项目实践与技术成长
 date: 2025-04-17
 image: /assets/images/2025-04-17-SixthPost.jpg
+categories: [技术]
 tags: [项目管理, 技术成长, 实践]
 ---
 

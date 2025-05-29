@@ -2,6 +2,7 @@
 layout: post
 title: "代码示例与最佳实践"
 date: 2025-04-18
+categories: [技术]
 tags: [代码, 示例, 技术]
 image: https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example
 ---

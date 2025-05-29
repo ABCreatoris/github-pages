@@ -53,6 +53,8 @@
   position: relative;
   background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
   overflow: hidden;
+  border-radius: 16px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
 }
 
 .post-card-image-wrapper::before {
@@ -84,6 +86,11 @@
 .post-card-image-wrapper.loaded::after {
   opacity: 0;
   pointer-events: none;
+}
+
+.post-card-image-wrapper:hover {
+  transform: scale(1.06);
+  z-index: 2;
 }
 
 .post-card img {
@@ -121,12 +128,33 @@
   margin: 0 0 8px 0;
   font-size: 1.4em;
   color: #4b5563;
+  text-align: center;
 }
 
-.post-date {
-  color: #aaa;
-  font-size: 0.95em;
-  margin-bottom: 10px;
+.post-card .post-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: #888;
+  font-size: 0.97em;
+  margin-bottom: 8px;
+  margin-top: 0;
+  justify-content: center;
+}
+
+.post-card .post-meta .post-date::before {
+  content: '📅';
+  margin-right: 3px;
+}
+
+.post-card .post-meta .word-count::before {
+  content: '📝';
+  margin-right: 3px;
+}
+
+.post-card .post-meta .reading-time::before {
+  content: '⏱️';
+  margin-right: 3px;
 }
 
 .post-excerpt {
@@ -163,6 +191,24 @@
 .post-card .post-tag:hover {
   opacity: 1;
   transform: translateY(-1px);
+}
+
+.post-card .post-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #888;
+  font-size: 0.97em;
+  margin: 0 6px 0 0;
+  font-weight: 400;
+}
+
+.post-card .post-category {
+  color: #8b5cf6;
+  font-size: 0.97em;
+  margin-bottom: 4px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 900px) {
@@ -207,4 +253,9 @@
     padding: 16px;
     margin: 0;
   }
+}
+
+.post-card:hover .post-card-image-wrapper {
+  transform: scale(1.06);
+  z-index: 2;
 } 

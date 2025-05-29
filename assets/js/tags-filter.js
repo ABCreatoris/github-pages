@@ -2,43 +2,56 @@ document.addEventListener('DOMContentLoaded', function() {
   const tagLinks = document.querySelectorAll('.tag-link, .tag-all');
   const tagSections = document.querySelectorAll('.tag-section');
 
-  function activateTagFromHash() {
-    const hash = decodeURIComponent(location.hash.replace('#', ''));
-    let found = false;
+  function showTag(tag) {
     tagLinks.forEach(link => {
-      if (link.textContent.trim() === hash) {
-        link.click();
-        found = true;
+      const linkTag = link.getAttribute('href').replace(/^#/, '');
+      if ((tag === null && link.classList.contains('tag-all')) || linkTag === tag) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
       }
     });
-    if (!found && hash === '') {
-      document.querySelector('.tag-all')?.click();
+    tagSections.forEach(section => {
+      if (tag === null || section.id === tag) {
+        section.style.display = '';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  function handleHash() {
+    const hash = location.hash.replace('#', '');
+    if (!hash) {
+      showTag(null); // 显示全部
+    } else {
+      showTag(hash);
+      // 滚动到目标
+      const targetSection = document.getElementById(hash);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   }
 
+  // 页面加载和 hash 变化时
+  handleHash();
+  window.addEventListener('hashchange', handleHash);
+
+  // 点击事件只更新 hash
   tagLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
-      // 激活状态切换
-      tagLinks.forEach(l => l.classList.remove('active'));
-      this.classList.add('active');
-
-      const tag = this.classList.contains('tag-all') ? null : this.getAttribute('href').replace('#', '');
-
-      tagSections.forEach(section => {
-        if (!tag || section.id === tag) {
-          section.style.display = '';
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const tag = this.classList.contains('tag-all') ? '' : href.replace('#', '');
+        if (location.hash.replace('#', '') !== tag) {
+          location.hash = tag;
         } else {
-          section.style.display = 'none';
+          // 如果 hash 没变，手动触发
+          handleHash();
         }
-      });
-      // 更新hash
-      if (tag) location.hash = tag;
-      else location.hash = '';
+      }
     });
   });
-
-  // 页面加载时根据hash激活
-  activateTagFromHash();
-  window.addEventListener('hashchange', activateTagFromHash);
 }); 

@@ -3,6 +3,7 @@ layout: post
 title: Hello, World!
 date: 2024-03-20
 image: /assets/images/2024-03-20-hello-world.jpg
+categories: [教程]
 tags: [入门, 教程, 技术]
 ---
 

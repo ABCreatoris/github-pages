@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuOverlay = document.querySelector('.menu-overlay');
   const body = document.body;
 
-  console.log('Menu elements:', { menuToggle, navRight, menuOverlay });
-
   // 确保在移动端视图下菜单按钮可见
   function checkMobileView() {
     if (window.innerWidth <= 768) {
@@ -21,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('resize', checkMobileView);
 
   function toggleMenu() {
-    console.log('Toggle menu clicked');
     const isActive = menuToggle.classList.contains('active');
     
     if (!isActive) {
@@ -35,36 +32,22 @@ document.addEventListener('DOMContentLoaded', function() {
       menuOverlay.classList.remove('active');
       body.style.overflow = '';
     }
-    
-    console.log('Menu state:', {
-      menuToggleActive: menuToggle.classList.contains('active'),
-      navRightActive: navRight.classList.contains('active'),
-      menuOverlayActive: menuOverlay.classList.contains('active')
-    });
   }
 
   if (menuToggle) {
     menuToggle.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      console.log('Menu toggle clicked');
       toggleMenu();
     });
-    console.log('Menu toggle click listener added');
-  } else {
-    console.error('Menu toggle button not found');
   }
 
   if (menuOverlay) {
     menuOverlay.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      console.log('Menu overlay clicked');
       toggleMenu();
     });
-    console.log('Menu overlay click listener added');
-  } else {
-    console.error('Menu overlay not found');
   }
 
   // 点击导航链接时关闭菜单

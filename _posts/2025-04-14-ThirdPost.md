@@ -3,6 +3,7 @@ layout: post
 title: 后端开发的核心与实践
 date: 2025-04-14
 image: /assets/images/2025-04-14-ThirdPost.jpg
+categories: [技术]
 tags: [后端, 开发, 技术]
 ---
 

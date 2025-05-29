@@ -100,8 +100,6 @@
   flex-direction: column;
   background: none !important;
   background-color: transparent !important;
-  color: #fff !important;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .tag-post-content h4 {

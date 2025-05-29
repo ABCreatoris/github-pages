@@ -1,5 +1,10 @@
+// 已移除所有 .tag-link 的 click 事件绑定，实现标签云自然跳转，无 JS 阻止
+// 如果需要前端筛选功能，请单独为特定区域的标签云实现，不影响跳转
+// 此文件已留空，保留占位 
+
 document.addEventListener('DOMContentLoaded', function() {
-  const tagLinks = document.querySelectorAll('.home-tag-cloud .tag-link, .tag-cloud-container .tag-all');
+  const categoryLinks = document.querySelectorAll('.home-category-cloud .category-link');
+  const allCategoryBtn = document.querySelector('.category-cloud-container .category-all');
   const posts = document.querySelectorAll('.posts-list .post-card');
 
   function updateCardLayout() {
@@ -13,17 +18,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  tagLinks.forEach(link => {
+  // "全部分类"按钮点击
+  if (allCategoryBtn) {
+    allCategoryBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      allCategoryBtn.classList.add('active');
+      categoryLinks.forEach(l => l.classList.remove('active'));
+      posts.forEach(post => post.style.display = '');
+      updateCardLayout();
+    });
+  }
+
+  // 分类按钮点击
+  categoryLinks.forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
-      tagLinks.forEach(l => l.classList.remove('active'));
+      categoryLinks.forEach(l => l.classList.remove('active'));
       this.classList.add('active');
-
-      const tag = this.classList.contains('tag-all') ? null : this.textContent.trim();
-
+      if (allCategoryBtn) allCategoryBtn.classList.remove('active');
+      const category = this.textContent.trim();
       posts.forEach(post => {
-        const tags = post.getAttribute('data-tags') || '';
-        if (!tag || tags.split(',').map(t => t.trim()).includes(tag)) {
+        const postCategory = post.getAttribute('data-category') || '';
+        if (postCategory === category) {
           post.style.display = '';
         } else {
           post.style.display = 'none';

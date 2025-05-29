@@ -14,14 +14,14 @@ title: 标签
       <a href="#" class="tag-all active">全部</a>
       {% assign all_tags = site.tags | sort %}
       {% for tag in all_tags %}
-        <a href="#{{ tag[0] }}" class="tag-link">{{ tag[0] }}</a>
+        <a href="#{{ tag[0] | uri_escape }}" class="tag-link">{{ tag[0] }}</a>
       {% endfor %}
     </div>
   </div>
 
   {% assign all_tags = site.tags | sort %}
   {% for tag in all_tags %}
-    <div id="{{ tag[0] }}" class="tag-section">
+    <div id="{{ tag[0] | uri_escape }}" class="tag-section">
       <h2 class="tag-title">
         <span class="tag-icon">#</span>
         {{ tag[0] }}
