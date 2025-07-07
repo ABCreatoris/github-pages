@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-29T10:32:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello, ABCreatoris</title><subtitle>Startup for ABCreatoris Github page</subtitle><author><name>ChenXY</name></author><entry><title type="html">代码示例与最佳实践</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample.html" rel="alternate" type="text/html" title="代码示例与最佳实践" /><published>2025-04-18T00:00:00+08:00</published><updated>2025-04-18T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample.html"><![CDATA[<p>在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-07T17:32:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello, ABCreatoris</title><subtitle>Startup for ABCreatoris Github page</subtitle><author><name>ChenXY</name></author><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/%E6%95%99%E7%A8%8B/2025/07/07/Hello-World.html" rel="alternate" type="text/html" title="Hello, World!" /><published>2025-07-07T00:00:00+08:00</published><updated>2025-07-07T00:00:00+08:00</updated><id>http://localhost:4000/%E6%95%99%E7%A8%8B/2025/07/07/Hello-World</id><content type="html" xml:base="http://localhost:4000/%E6%95%99%E7%A8%8B/2025/07/07/Hello-World.html"><![CDATA[<p>本文作为博客站点第一篇文章，主要讲述为何写博客、何时写博客和如何写博客。其中在为何写博客中，阐述了不同阶段对于博客的需求；在何时写博客中，分析了时效性对于博文的影响以及什么时间点对于博主而言最为重要；在怎样写博客中，列举了创建博客的技术选型、什么类型的博文适合发布在此站点、以及如何保证长期主义。</p>
+
+<h2 id="为何写博客">为何写博客</h2>
+
+<p>​	如今的这个博客的风格已经写好很久了，但是一直以来并没有启用。就其原因，是做一件事情太注重其形式，而忘记写笔记本身。</p>
+
+<p>​	本科阶段我就密集地接触博文，当时主要是学习其中的教程，同时也欣赏作者们分享自己的技术路线的探索精神。仿佛是在原始部落中有人在前方为大家探路，然后回来分享自己的经验。接收了别人递过来的火把，我也想做递火把的人，这是我写博客最开始的初衷。</p>
+
+<p>​	同时，写博文也是一个梳理自己思路的一个过程。通过这个过程，以及教授他人、公开演讲、同行沟通、阅读书籍、请教专家，一个人的学识和认知才可以不断地提升。这必然是一个互惠互利的过程，也符合软价值交换的逻辑。因此在开启此博客，当前的目的主要是进行记录，梳理自己搞清楚的思路，帮助自己同时也照亮他人；同时，可以通过发布到源码网站的形式，来随时拉取构建我的博客。方便随时开启思路整理。</p>
+
+<h2 id="何时写博客">何时写博客</h2>
+
+<p>​	每当一个灵感的出现，都需要迅速地捕捉它，不然只消片刻它就可能从脑海中消失不见。人，都会慢慢忘掉一些事情，一些经验、巧思和苦痛，都像是酒；只有放在瓶子里才会越来越香，但如果不加以珍藏，就会挥散到空气中，或者变质成为醋。</p>
+
+<p>​	一些聪明的人，一些聪明的做法，在开始就要迅速的总结。并不一定需要通过博客的形式，因为时效性是最重要的。想好了总结下来就尽快留下原始材料；然而最好在当天晚上，或者比较近的时间，可以快速去进行总结。这样子才可以产生有深度的内容，从原始的语料库中总结，汇集成新的文章。最后，删除博文中没有用、时效性不符合的内容。</p>
+
+<p>​	所以，博客的撰写分为三个时刻。第一个就是开始时效性收集，从脑中的想法汇总到文字构成的初始语料；第二个是语料到博客正文的总结，将所思所想观看是否可以汇总到之前的文章或者想法，从而增强、修改或舍弃；第三个则是反复看原先的博客，以现在的视角看之前的问题，不断地去加深对问题的认知，最终汇总成一片完整的文章。</p>
+
+<p>​	所以不可第一个时刻要选择在产生想法的当下，立即使用东西记录，无论什么来记录，如手机、电脑、iPad、纸张甚至胳膊等等。第二个时刻通常需要选择在事情结束后的一小段时间，放松下来可以做事情的时候。这个时刻必然存在，就像是去吃饭、去上洗手间，这个时刻也是必须的时刻，可能只是花费小的时间，进行一天的总结，可以不必十分完善，但是必须当天选时间来做。现在笔者我通常选择中午或者晚上，可能之后也会随着作息更改。</p>
+
+<h2 id="如何写博客">如何写博客</h2>
+
+<p>​	首先来说如何选取博客。作为博文来说，思想首先需要载体。过往的竹帛羊皮都因为一些原因而从记述的载体中退散，如果想要减少阅读成本，在记录的时候就应该思考载体。对于本博客，是通过文件夹加上markdown文件存储，个人认为比起从数据库不断导出来的方便许多。如果后期真的数量增加，移植起来也方便。</p>
+
+<p>​	对于微博、开源中国、Notion以及其他的笔记软件，不得不说它们各自都有优点，但是实在没有激起写作和分享的欲望。可能不能够筛选出其中高质量的文章吧。所以感觉还是偏向于自己记录，和带有目的性的搜寻。对于自己记录，Notion却着实带来一些方便，目前采用<a href="https://www.tangly1024.com/">NotionNext</a>等博客框架来建站。但是免不了高不成低不就的情况，其他的情况可能不如博客园。做一个博客平台，个人来说，收益很低，但是有着前景。不过是后话。此站点目前不好的地方是，没有博文管理平台，单反麻烦，便是用户精神性需求。总是有需要的。</p>
+
+<p>​	但是，目前对于一个上进的人来说，他的主要问题是饿。但是了解饿的人的需求，拥有饿的人的认知，最多赚到饿的人的钱。而赚饿的人的钱的人，又是富的人。饿的人竞争过富的人，不仅要突破资源瓶颈，同时要突破认知瓶颈。难如登天，不如赚富的人的钱，满足精神性的需求；而不是争取饿的人的稀缺资源，让自己陷落到底层搏杀的境地。不过这些关于技术选型是后话了。对于目前的我来说，能做，如果我是富的人，已经开始做了。目前而言，只可以记录，而更多的时间，得用来去做来钱的事情。这一点倒是符合了纳瓦尔的经历，不过关于这些倒是这扯远了。</p>
+
+<p>​	目前则仅仅是用markdown+typora来记录，发布到GitHub然后变成网站，也暂时无心做评论系统，后期公布邮箱等可供联系。总之， Hello, World ! :sailboat:</p>
+
+<p><img src="/assets/images/2025-07-07-In-World.jpg" alt="图片标注" /></p>]]></content><author><name>ChenXY</name></author><category term="教程" /><category term="技术" /><category term="文档" /><summary type="html"><![CDATA[本文作为博客站点第一篇文章，主要讲述为何写博客、何时写博客和如何写博客。其中在为何写博客中，阐述了不同阶段对于博客的需求；在何时写博客中，分析了时效性对于博文的影响以及什么时间点对于博主而言最为重要；在怎样写博客中，列举了创建博客的技术选型、什么类型的博文适合发布在此站点、以及如何保证长期主义。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-07-07-Hello-World.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-07-07-Hello-World.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">代码示例与最佳实践</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample.html" rel="alternate" type="text/html" title="代码示例与最佳实践" /><published>2025-04-18T00:00:00+08:00</published><updated>2025-04-18T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample.html"><![CDATA[<p>在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。</p>
 
 <h2 id="javascript-示例">JavaScript 示例</h2>
 
@@ -141,118 +171,4 @@ git push origin feature/new-feature
   <li>使用版本控制管理代码</li>
 </ol>
 
-<p>希望这些示例对您有所帮助！</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="代码" /><category term="示例" /><category term="技术" /><summary type="html"><![CDATA[在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" /><media:content medium="image" url="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">高效项目实践与技术成长</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/17/SixthPost.html" rel="alternate" type="text/html" title="高效项目实践与技术成长" /><published>2025-04-17T00:00:00+08:00</published><updated>2025-04-17T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/17/SixthPost</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/17/SixthPost.html"><![CDATA[<p>这是我的第六篇博客文章。今天我想分享一些关于 DevOps 的心得。</p>
-
-<h2 id="devops-心得">DevOps 心得</h2>
-
-<p>DevOps 是开发、测试和运维的结合，目标是提高软件交付效率。使用 CI/CD 工具（如 Jenkins、GitLab CI）和容器技术（如 Docker、Kubernetes），可以大大简化部署流程。</p>
-
-<h2 id="未来计划">未来计划</h2>
-
-<p>希望未来能深入学习更多 DevOps 技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="项目管理" /><category term="技术成长" /><category term="实践" /><summary type="html"><![CDATA[这是我的第六篇博客文章。今天我想分享一些关于 DevOps 的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-17-SixthPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-17-SixthPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">云服务时代的开发体验</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/16/FifthPost.html" rel="alternate" type="text/html" title="云服务时代的开发体验" /><published>2025-04-16T00:00:00+08:00</published><updated>2025-04-16T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/16/FifthPost</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/16/FifthPost.html"><![CDATA[<p>这是我的第五篇博客文章。今天我想分享一些关于云服务的心得。</p>
-
-<h2 id="云服务心得">云服务心得</h2>
-
-<p>云服务（如 AWS、Azure、Google Cloud）让开发和部署变得更加灵活。无论是服务器、存储还是 AI 服务，云平台都能提供强大的支持。</p>
-
-<h2 id="未来计划">未来计划</h2>
-
-<p>希望未来能深入学习更多云服务技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="云服务" /><category term="开发" /><category term="技术" /><summary type="html"><![CDATA[这是我的第五篇博客文章。今天我想分享一些关于云服务的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-16-FifthPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-16-FifthPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">数据库技术与系统性能</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/15/FourthPost.html" rel="alternate" type="text/html" title="数据库技术与系统性能" /><published>2025-04-15T00:00:00+08:00</published><updated>2025-04-15T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/15/FourthPost</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/15/FourthPost.html"><![CDATA[<p>这是我的第四篇博客文章。今天我想分享一些关于数据库的心得。</p>
-
-<h2 id="数据库心得">数据库心得</h2>
-
-<p>数据库是后端系统的核心。无论是关系型数据库（如 MySQL、PostgreSQL）还是 NoSQL 数据库（如 MongoDB、Redis），选择合适的数据库对系统性能至关重要。</p>
-
-<h2 id="未来计划">未来计划</h2>
-
-<p>希望未来能深入学习更多数据库技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="数据库" /><category term="性能优化" /><category term="技术" /><summary type="html"><![CDATA[这是我的第四篇博客文章。今天我想分享一些关于数据库的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-15-FourthPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-15-FourthPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">后端开发的核心与实践</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/14/ThirdPost.html" rel="alternate" type="text/html" title="后端开发的核心与实践" /><published>2025-04-14T00:00:00+08:00</published><updated>2025-04-14T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/14/ThirdPost</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/14/ThirdPost.html"><![CDATA[<p>这是我的第三篇博客文章。今天我想分享一些关于后端开发的心得。</p>
-
-<h2 id="后端开发心得">后端开发心得</h2>
-
-<p>后端开发是构建稳定、高效系统的关键。使用 Node.js、Python 或 Java 等语言，可以快速搭建强大的后端服务。</p>
-
-<h2 id="未来计划">未来计划</h2>
-
-<p>希望未来能深入学习更多后端技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="后端" /><category term="开发" /><category term="技术" /><summary type="html"><![CDATA[这是我的第三篇博客文章。今天我想分享一些关于后端开发的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-14-ThirdPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-14-ThirdPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">前端开发的乐趣与挑战</title><link href="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/13/SecondPost.html" rel="alternate" type="text/html" title="前端开发的乐趣与挑战" /><published>2025-04-13T00:00:00+08:00</published><updated>2025-04-13T00:00:00+08:00</updated><id>http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/13/SecondPost</id><content type="html" xml:base="http://localhost:4000/%E6%8A%80%E6%9C%AF/2025/04/13/SecondPost.html"><![CDATA[<p>这是我的第二篇博客文章。今天我想分享一些关于前端开发的心得。</p>
-
-<h2 id="前端开发心得">前端开发心得</h2>
-
-<p>前端开发是一个充满挑战和乐趣的领域。HTML、CSS 和 JavaScript 是基础，但现代前端框架（如 React、Vue）让开发更加高效。</p>
-
-<h2 id="未来计划">未来计划</h2>
-
-<p>希望未来能深入学习更多前端技术，并在这里分享我的学习笔记。</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="前端" /><category term="开发" /><category term="技术" /><summary type="html"><![CDATA[这是我的第二篇博客文章。今天我想分享一些关于前端开发的心得。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-13-SecondPost.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-13-SecondPost.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jekyll与我的博客之路</title><link href="http://localhost:4000/%E6%95%99%E7%A8%8B/2025/04/12/HelloWorld.html" rel="alternate" type="text/html" title="Jekyll与我的博客之路" /><published>2025-04-12T00:00:00+08:00</published><updated>2025-04-12T00:00:00+08:00</updated><id>http://localhost:4000/%E6%95%99%E7%A8%8B/2025/04/12/HelloWorld</id><content type="html" xml:base="http://localhost:4000/%E6%95%99%E7%A8%8B/2025/04/12/HelloWorld.html"><![CDATA[<p>这是我的第一篇博客文章。在这里，我将分享我的学习心得和生活感悟。</p>
-
-<h2 id="学习心得">学习心得</h2>
-
-<p>最近在学习 Jekyll 和 GitHub Pages，发现它们非常适合用来搭建个人博客。Jekyll 的简洁和 GitHub Pages 的免费托管，让我能够快速上线自己的网站。</p>
-
-<p><img src="/assets/images/jekyll-logo.png" alt="Jekyll Logo" /></p>
-
-<h2 id="生活感悟">生活感悟</h2>
-
-<p>生活就像编程，需要不断调试和优化。希望在这里记录下我的每一步成长。</p>
-
-<p><img src="/assets/images/life.jpg" alt="Life" /></p>]]></content><author><name>ChenXY</name></author><category term="教程" /><category term="Jekyll" /><category term="博客" /><category term="教程" /><summary type="html"><![CDATA[这是我的第一篇博客文章。在这里，我将分享我的学习心得和生活感悟。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2025-04-12-HelloWorld.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2025-04-12-HelloWorld.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">高效项目实践与技术成长</title><link href="http://localhost:4000/%E9%A1%B9%E7%9B%AE/2024/03/21/my-first-project.html" rel="alternate" type="text/html" title="高效项目实践与技术成长" /><published>2024-03-21T00:00:00+08:00</published><updated>2024-03-21T00:00:00+08:00</updated><id>http://localhost:4000/%E9%A1%B9%E7%9B%AE/2024/03/21/my-first-project</id><content type="html" xml:base="http://localhost:4000/%E9%A1%B9%E7%9B%AE/2024/03/21/my-first-project.html"><![CDATA[<p>这是我的第一个项目展示文章。在这篇文章中，我使用了多个标签来更好地组织内容。重新开局最喜欢v看着许可证喜欢v空间秩序空间站v科技合作想看v促进小城镇空间和v看着旧恨新仇v在科学决策v好快好快结束的饭卡还是地方看见啊还是地方看见哈萨克复活卡上方空间啊是否打卡金黄色的饭卡还是看大家发哈开始计划的饭卡接受对方空间啊回复</p>
-
-<h2 id="项目介绍">项目介绍</h2>
-
-<p>这是一个示例项目，用于展示如何正确使用标签系统。</p>
-
-<h3 id="标签使用说明">标签使用说明</h3>
-
-<ol>
-  <li>技术标签：用于标记技术相关的文章</li>
-  <li>项目标签：用于标记项目展示类文章</li>
-  <li>教程标签：用于标记教程类文章</li>
-</ol>
-
-<p>您可以根据文章的内容，选择合适的标签组合。例如：</p>
-<ul>
-  <li>技术文章：使用 [技术] 标签</li>
-  <li>项目展示：使用 [技术, 项目] 标签</li>
-  <li>教程文章：使用 [技术, 教程] 标签</li>
-  <li>生活随笔：使用 [生活] 标签</li>
-</ul>
-
-<p>记住，标签的选择应该：</p>
-<ul>
-  <li>准确反映文章内容</li>
-  <li>便于读者查找</li>
-  <li>保持一致性</li>
-  <li>避免过度使用</li>
-</ul>]]></content><author><name>ChenXY</name></author><category term="项目" /><category term="项目" /><category term="实践" /><category term="技术" /><summary type="html"><![CDATA[这是我的第一个项目展示文章。在这篇文章中，我使用了多个标签来更好地组织内容。重新开局最喜欢v看着许可证喜欢v空间秩序空间站v科技合作想看v促进小城镇空间和v看着旧恨新仇v在科学决策v好快好快结束的饭卡还是地方看见啊还是地方看见哈萨克复活卡上方空间啊是否打卡金黄色的饭卡还是看大家发哈开始计划的饭卡接受对方空间啊回复]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2024-03-21-my-first-project.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2024-03-21-my-first-project.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Hello, World!</title><link href="http://localhost:4000/%E6%95%99%E7%A8%8B/2024/03/20/hello-world.html" rel="alternate" type="text/html" title="Hello, World!" /><published>2024-03-20T00:00:00+08:00</published><updated>2024-03-20T00:00:00+08:00</updated><id>http://localhost:4000/%E6%95%99%E7%A8%8B/2024/03/20/hello-world</id><content type="html" xml:base="http://localhost:4000/%E6%95%99%E7%A8%8B/2024/03/20/hello-world.html"><![CDATA[<p>这是我的第一篇博客文章。在这里，我使用了 <code class="language-plaintext highlighter-rouge">tags</code> 属性来添加标签。您可以在文章的前置元数据中添加多个标签，它们会自动显示在标签页面中。</p>
-
-<h2 id="如何添加标签">如何添加标签</h2>
-
-<p>在每篇文章的顶部，您需要添加前置元数据（front matter），格式如下：</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">文章标题"</span>
-<span class="na">date</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>
-<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">标签1</span><span class="pi">,</span> <span class="nv">标签2</span><span class="pi">,</span> <span class="nv">标签3</span><span class="pi">]</span>
-<span class="na">image</span><span class="pi">:</span> <span class="s">/图片路径.jpg</span>
-<span class="nn">---</span>
-</code></pre></div></div>
-
-<h3 id="标签使用建议">标签使用建议</h3>
-
-<ol>
-  <li>使用简洁的标签名称</li>
-  <li>保持标签的一致性</li>
-  <li>避免使用过于具体的标签</li>
-  <li>建议使用中文标签，便于中文用户理解</li>
-</ol>
-
-<h3 id="常用标签示例">常用标签示例</h3>
-
-<ul>
-  <li>技术：用于技术相关的文章</li>
-  <li>学习：用于学习笔记和心得</li>
-  <li>生活：用于生活随笔</li>
-  <li>项目：用于项目展示</li>
-  <li>教程：用于教程类文章</li>
-</ul>
-
-<p>您可以根据自己的需求添加或修改标签。标签会自动在标签页面中显示，并统计每篇文章的数量。</p>]]></content><author><name>ChenXY</name></author><category term="教程" /><category term="入门" /><category term="教程" /><category term="技术" /><summary type="html"><![CDATA[这是我的第一篇博客文章。在这里，我使用了 tags 属性来添加标签。您可以在文章的前置元数据中添加多个标签，它们会自动显示在标签页面中。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2024-03-20-hello-world.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2024-03-20-hello-world.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>希望这些示例对您有所帮助！</p>]]></content><author><name>ChenXY</name></author><category term="技术" /><category term="代码" /><category term="示例" /><category term="技术" /><summary type="html"><![CDATA[在这篇文章中，我们将展示各种代码示例，包括不同编程语言的语法高亮、代码块和行内代码。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" /><media:content medium="image" url="https://placehold.co/800x400/8b5cf6/ffffff?text=Code+Example" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
