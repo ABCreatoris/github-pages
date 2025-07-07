@@ -5,9 +5,9 @@ layout: default
   <header class="post-header">
     <h2 class="post-title">{{ page.title }}</h2>
     <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-      <div class="post-stats">
+      <div class="post-stats" style="justify-content:center;">
         <span class="word-count">{{ page.content | number_of_words }} 字</span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
         <span class="reading-time">{{ page.content | number_of_words | divided_by: 400 | plus: 1 }} 分钟</span>
       </div>
     </div>
@@ -26,7 +26,7 @@ layout: default
   </header>
 
   <div class="post-content">
-    {{ content }}
+    {{ content | emojify }}
   </div>
 
   <footer class="post-footer">

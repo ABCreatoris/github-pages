@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/css/basic/emojify.min.css">
 </head>
 <body>
   <div class="menu-overlay"></div>
@@ -38,7 +40,7 @@
   </header>
 
   <main>
-    {{ content }}
+    {{ content | emojify }}
   </main>
 
   <button class="back-to-top" aria-label="回到顶部">
@@ -60,5 +62,22 @@
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/js/emojify.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    emojify.setConfig({
+      img_dir : 'https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/images/basic',
+      ignore_tags: []
+    });
+    document.querySelectorAll('.post-content').forEach(function(el) {
+      emojify.run(el);
+    });
+    document.querySelectorAll('.post-content p').forEach(function(p) {
+      if (/[\u4e00-\u9fa5]/.test(p.textContent)) {
+        p.classList.add('cn-indent');
+      }
+    });
+  });
+  </script>
 </body>
 </html> 

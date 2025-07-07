@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>我的博客</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/css/basic/emojify.min.css">
 </head>
 <body>
   <div class="menu-overlay"></div>
@@ -54,8 +56,6 @@
         
           <a href="#教程" class="category-link">教程</a>
         
-          <a href="#项目" class="category-link">项目</a>
-        
       </div>
       <button class="category-scroll-btn category-scroll-right" aria-label="右移">
         <svg width="20" height="20" viewBox="0 0 20 20"><path d="M7 5l5 5-5 5" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
@@ -63,6 +63,39 @@
     </div>
 
     <div class="posts-list">
+      
+        <article class="post-card" data-tags="技术,文档" data-category="教程">
+          <a href="/%E6%95%99%E7%A8%8B/2025/07/07/Hello-World.html">
+            <div class="post-card-image-wrapper">
+              <img src="/assets/images/2025-07-07-Hello-World.jpg" alt="Hello, World!" />
+            </div>
+            <div class="post-card-content">
+              <h2>
+                Hello, World!
+                
+                  <span class="post-category">教程</span>
+                
+              </h2>
+              <div class="post-meta">
+                <span class="post-meta-item post-date">2025-07-07</span>
+                <span class="post-meta-item word-count">～</span>
+                <span class="post-meta-item reading-time">～</span>
+              </div>
+              <p class="post-excerpt">本文作为博客站点第一篇文章，主要讲述为何写博客、何时写博客和如何写博客。其中在为何写博客中，阐述了不同阶段对于博客的需求；在何时写博客中，分析了时效性对于博文的影响以及什么时间点对于博主而言最为重要；在怎样写博客中，列举了创建博客的技术选型、什么类型的博文适合发布在此站点、以及如何保证长期主义。
+
+</p>
+              
+                <div class="post-tags">
+                  
+                    <span class="post-tag">#技术</span>
+                  
+                    <span class="post-tag">#文档</span>
+                  
+                </div>
+              
+            </div>
+          </a>
+        </article>
       
         <article class="post-card" data-tags="代码,示例,技术" data-category="技术">
           <a href="/%E6%8A%80%E6%9C%AF/2025/04/18/CodeExample.html">
@@ -99,286 +132,6 @@
           </a>
         </article>
       
-        <article class="post-card" data-tags="项目管理,技术成长,实践" data-category="技术">
-          <a href="/%E6%8A%80%E6%9C%AF/2025/04/17/SixthPost.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2025-04-17-SixthPost.jpg" alt="高效项目实践与技术成长" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                高效项目实践与技术成长
-                
-                  <span class="post-category">技术</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2025-04-17</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第六篇博客文章。今天我想分享一些关于 DevOps 的心得。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#项目管理</span>
-                  
-                    <span class="post-tag">#技术成长</span>
-                  
-                    <span class="post-tag">#实践</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="云服务,开发,技术" data-category="技术">
-          <a href="/%E6%8A%80%E6%9C%AF/2025/04/16/FifthPost.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2025-04-16-FifthPost.jpg" alt="云服务时代的开发体验" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                云服务时代的开发体验
-                
-                  <span class="post-category">技术</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2025-04-16</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第五篇博客文章。今天我想分享一些关于云服务的心得。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#云服务</span>
-                  
-                    <span class="post-tag">#开发</span>
-                  
-                    <span class="post-tag">#技术</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="数据库,性能优化,技术" data-category="技术">
-          <a href="/%E6%8A%80%E6%9C%AF/2025/04/15/FourthPost.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2025-04-15-FourthPost.jpg" alt="数据库技术与系统性能" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                数据库技术与系统性能
-                
-                  <span class="post-category">技术</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2025-04-15</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第四篇博客文章。今天我想分享一些关于数据库的心得。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#数据库</span>
-                  
-                    <span class="post-tag">#性能优化</span>
-                  
-                    <span class="post-tag">#技术</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="后端,开发,技术" data-category="技术">
-          <a href="/%E6%8A%80%E6%9C%AF/2025/04/14/ThirdPost.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2025-04-14-ThirdPost.jpg" alt="后端开发的核心与实践" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                后端开发的核心与实践
-                
-                  <span class="post-category">技术</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2025-04-14</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第三篇博客文章。今天我想分享一些关于后端开发的心得。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#后端</span>
-                  
-                    <span class="post-tag">#开发</span>
-                  
-                    <span class="post-tag">#技术</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="前端,开发,技术" data-category="技术">
-          <a href="/%E6%8A%80%E6%9C%AF/2025/04/13/SecondPost.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2025-04-13-SecondPost.jpg" alt="前端开发的乐趣与挑战" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                前端开发的乐趣与挑战
-                
-                  <span class="post-category">技术</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2025-04-13</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第二篇博客文章。今天我想分享一些关于前端开发的心得。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#前端</span>
-                  
-                    <span class="post-tag">#开发</span>
-                  
-                    <span class="post-tag">#技术</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="Jekyll,博客,教程" data-category="教程">
-          <a href="/%E6%95%99%E7%A8%8B/2025/04/12/HelloWorld.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2025-04-12-HelloWorld.jpg" alt="Jekyll与我的博客之路" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                Jekyll与我的博客之路
-                
-                  <span class="post-category">教程</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2025-04-12</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第一篇博客文章。在这里，我将分享我的学习心得和生活感悟。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#Jekyll</span>
-                  
-                    <span class="post-tag">#博客</span>
-                  
-                    <span class="post-tag">#教程</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="项目,实践,技术" data-category="项目">
-          <a href="/%E9%A1%B9%E7%9B%AE/2024/03/21/my-first-project.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2024-03-21-my-first-project.jpg" alt="高效项目实践与技术成长" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                高效项目实践与技术成长
-                
-                  <span class="post-category">项目</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2024-03-21</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第一个项目展示文章。在这篇文章中，我使用了多个标签来更好地组织内容。重新开局最喜欢v看着许可证喜欢v空间秩序空间站v科技合作想看v促进小城镇空间和v看着旧恨新仇v在科学决策v好快好快结束的饭卡还是地方看见啊还是地方看见哈萨克复活卡上方空间啊是否打卡金黄色的饭卡还是看大家发哈开始计划的饭卡接受对方空间啊回复
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#项目</span>
-                  
-                    <span class="post-tag">#实践</span>
-                  
-                    <span class="post-tag">#技术</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
-        <article class="post-card" data-tags="入门,教程,技术" data-category="教程">
-          <a href="/%E6%95%99%E7%A8%8B/2024/03/20/hello-world.html">
-            <div class="post-card-image-wrapper">
-              <img src="/assets/images/2024-03-20-hello-world.jpg" alt="Hello, World!" />
-            </div>
-            <div class="post-card-content">
-              <h2>
-                Hello, World!
-                
-                  <span class="post-category">教程</span>
-                
-              </h2>
-              <div class="post-meta">
-                <span class="post-meta-item post-date">2024-03-20</span>
-                <span class="post-meta-item word-count">～</span>
-                <span class="post-meta-item reading-time">～</span>
-              </div>
-              <p class="post-excerpt">这是我的第一篇博客文章。在这里，我使用了 tags 属性来添加标签。您可以在文章的前置元数据中添加多个标签，它们会自动显示在标签页面中。
-
-</p>
-              
-                <div class="post-tags">
-                  
-                    <span class="post-tag">#入门</span>
-                  
-                    <span class="post-tag">#教程</span>
-                  
-                    <span class="post-tag">#技术</span>
-                  
-                </div>
-              
-            </div>
-          </a>
-        </article>
-      
     </div>
   </div>
 
@@ -400,11 +153,11 @@
       <p class="profile-bio">热爱技术，热爱生活</p>
       <div class="profile-stats">
         <div class="stat-item">
-          <span class="stat-value">9</span>
+          <span class="stat-value">2</span>
           <span class="stat-label">文章</span>
         </div>
         <div class="stat-item">
-          <span class="stat-value">3</span>
+          <span class="stat-value">2</span>
           <span class="stat-label">分类</span>
         </div>
       </div>
@@ -416,39 +169,13 @@
         <div class="tag-cloud home-tag-cloud" id="draggable-tag-cloud">
           
           
-            <a href="/tags#Jekyll" class="tag-link">Jekyll</a>
-          
-            <a href="/tags#%E4%BA%91%E6%9C%8D%E5%8A%A1" class="tag-link">云服务</a>
-          
             <a href="/tags#%E4%BB%A3%E7%A0%81" class="tag-link">代码</a>
-          
-            <a href="/tags#%E5%85%A5%E9%97%A8" class="tag-link">入门</a>
-          
-            <a href="/tags#%E5%89%8D%E7%AB%AF" class="tag-link">前端</a>
-          
-            <a href="/tags#%E5%8D%9A%E5%AE%A2" class="tag-link">博客</a>
-          
-            <a href="/tags#%E5%90%8E%E7%AB%AF" class="tag-link">后端</a>
-          
-            <a href="/tags#%E5%AE%9E%E8%B7%B5" class="tag-link">实践</a>
-          
-            <a href="/tags#%E5%BC%80%E5%8F%91" class="tag-link">开发</a>
-          
-            <a href="/tags#%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96" class="tag-link">性能优化</a>
           
             <a href="/tags#%E6%8A%80%E6%9C%AF" class="tag-link">技术</a>
           
-            <a href="/tags#%E6%8A%80%E6%9C%AF%E6%88%90%E9%95%BF" class="tag-link">技术成长</a>
-          
-            <a href="/tags#%E6%95%99%E7%A8%8B" class="tag-link">教程</a>
-          
-            <a href="/tags#%E6%95%B0%E6%8D%AE%E5%BA%93" class="tag-link">数据库</a>
+            <a href="/tags#%E6%96%87%E6%A1%A3" class="tag-link">文档</a>
           
             <a href="/tags#%E7%A4%BA%E4%BE%8B" class="tag-link">示例</a>
-          
-            <a href="/tags#%E9%A1%B9%E7%9B%AE" class="tag-link">项目</a>
-          
-            <a href="/tags#%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86" class="tag-link">项目管理</a>
           
         </div>
       </div>
@@ -531,5 +258,22 @@
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/search.js"></script>
   <script src="/assets/js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/js/emojify.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    emojify.setConfig({
+      img_dir : 'https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/images/basic',
+      ignore_tags: []
+    });
+    document.querySelectorAll('.post-content').forEach(function(el) {
+      emojify.run(el);
+    });
+    document.querySelectorAll('.post-content p').forEach(function(p) {
+      if (/[\u4e00-\u9fa5]/.test(p.textContent)) {
+        p.classList.add('cn-indent');
+      }
+    });
+  });
+  </script>
 </body>
 </html> 

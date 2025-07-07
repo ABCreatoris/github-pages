@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>代码示例与最佳实践</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/css/basic/emojify.min.css">
 </head>
 <body>
   <div class="menu-overlay"></div>
@@ -42,9 +44,9 @@
   <header class="post-header">
     <h2 class="post-title">代码示例与最佳实践</h2>
     <div class="post-meta">
-      <time datetime="2025-04-18T00:00:00+08:00">2025-04-18</time>
-      <div class="post-stats">
+      <div class="post-stats" style="justify-content:center;">
         <span class="word-count">590 字</span>
+        <time datetime="2025-04-18T00:00:00+08:00">2025-04-18</time>
         <span class="reading-time">2 分钟</span>
       </div>
     </div>
@@ -217,11 +219,11 @@ git push origin feature/new-feature
   <footer class="post-footer">
     <nav class="post-navigation">
       
-        <a href="/%E6%8A%80%E6%9C%AF/2025/04/17/SixthPost.html" class="prev-post">
-          <span class="nav-label">上一篇</span>
-          <span class="nav-title">高效项目实践与技术成长</span>
-        </a>
       
+        <a href="/%E6%95%99%E7%A8%8B/2025/07/07/Hello-World.html" class="next-post">
+          <span class="nav-label">下一篇</span>
+          <span class="nav-title">Hello, World!</span>
+        </a>
       
     </nav>
   </footer>
@@ -249,5 +251,22 @@ git push origin feature/new-feature
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/search.js"></script>
   <script src="/assets/js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/js/emojify.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    emojify.setConfig({
+      img_dir : 'https://cdn.jsdelivr.net/npm/emojify.js@1.1.0/dist/images/basic',
+      ignore_tags: []
+    });
+    document.querySelectorAll('.post-content').forEach(function(el) {
+      emojify.run(el);
+    });
+    document.querySelectorAll('.post-content p').forEach(function(p) {
+      if (/[\u4e00-\u9fa5]/.test(p.textContent)) {
+        p.classList.add('cn-indent');
+      }
+    });
+  });
+  </script>
 </body>
 </html> 
